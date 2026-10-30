@@ -26,6 +26,24 @@ st.markdown(
     <style>
     .stApp { background: #0b1020; color: #eef2ff; }
     [data-testid="stSidebar"] { background: #111a30; }
+    /* Keep sidebar labels readable against the dark sidebar background. */
+    [data-testid="stSidebar"],
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] div,
+    [data-testid="stSidebar"] small,
+    [data-testid="stSidebar"] .stMarkdown,
+    [data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
+      color: #eef2ff !important;
+    }
+    [data-testid="stSidebar"] [data-testid="stCaptionContainer"] {
+      color: #b9c7e6 !important;
+    }
+    [data-testid="stSidebar"] input,
+    [data-testid="stSidebar"] textarea {
+      color: #eef2ff !important;
+    }
     h1, h2, h3 { color: #f4f7ff; }
     .hero {
       padding: 1.5rem 1.7rem; border-radius: 18px;
